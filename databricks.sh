@@ -7,5 +7,6 @@ databricks secrets create-scope --scope TEST_SFTP
 
 databricks secrets delete --scope TEST_SFTP --key PORT
 databricks secrets put --scope TEST_SFTP --key PORT  
+databricks secrets put --scope TEST_SFTP --key PORT  --profile old-space   
 
 databricks secrets list-scopes

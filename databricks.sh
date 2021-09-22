@@ -1,3 +1,6 @@
+# databricks profiles
+vi ~/.databrickscfg
+
 # remove built data when re-running adjusted code on active cluster
 rm -rf build/ dist/ getsafe_reporting.egg-info/
 

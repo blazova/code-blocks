@@ -14,3 +14,4 @@ databricks secrets put --scope TEST_SFTP --key PORT
 databricks secrets put --scope TEST_SFTP --key PORT  --profile old-space   
 
 databricks secrets list-scopes
+databricks secrets list --scope my-scope --output JSON

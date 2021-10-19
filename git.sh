@@ -7,6 +7,7 @@ git push origin main --tags
 
 #delete local tags
 $ git tag -d <tag_name>
+# then push
 
 #delete remote tags
 $ git push --delete origin tagname

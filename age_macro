@@ -1,0 +1,3 @@
+{% macro age(as_of_date, date_of_birth) -%}
+date_diff( {{as_of_date}}, {{date_of_birth}}, year) - if( extract(month from {{date_of_birth}} )*100 + extract(day from {{date_of_birth}} ) > EXTRACT(MONTH FROM {{as_of_date}} )*100 + EXTRACT(DAY FROM {{as_of_date}} ),1,0) as age
+{%- endmacro %}

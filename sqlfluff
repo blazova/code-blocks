@@ -1,5 +1,0 @@
-sqlfluff lint  models/dtc/final/email_models/*.sql
-
-sqlfluff lint $(git diff origin/master... --name-only && git diff --name-only)
-
-sqlfluff fix $(git diff origin/master... --name-only && git diff --name-only)

@@ -39,3 +39,14 @@ REVOKE USAGE ON SCHEMA schema_name FROM role_name;
 
 ALTER TABLE table_name DROP COLUMN column_name; -- drop column 
 
+
+INSERT INTO `your_project_id.your_dataset.your_new_table` (
+    id,
+    -- ... include ALL columns in the exact same order as above ...
+)
+SELECT
+    id,
+    -- ... include ALL columns in the exact same order as above ...
+FROM `your_project_id.your_dataset.your_table_copy`;
+
+
